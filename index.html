@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login dim</title>
+    <link rel="stylesheet" href="/css/pgloginc.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="jsdapg1.js"></script>
+
+</head>
+<body>
+ 
+    <nav class="navbar navbar-light" style="background-color: rgb(255, 145, 0)">
+        <div class="container-md">
+          <a class="navbar-brand text-white" href="#">Dim Dim</a>
+        </div>
+    </nav>
+    
+    
+    <div class="imagem">
+        <img src="/img/pg1.jpg" alt="Bootstrap" max-width="100%"  height="auto" class="lg-img">
+    </div>
+    <div class="f-login">
+        <form action="/html/homeDim.html" class="botao" method="post" target="_self">
+            <p class="h1">Dim Dim Login.</p>
+            <div class="in1">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="NOME" autocomplete="off" onblur="javascript: validarCPF(this.value);" maxlength="14" required>
+                
+                <label for="cpf">Cpf:</label>
+                <input type="text" name="cpf" id="CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="EMAIL" autocomplete="off" required>
+                
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="SENHA" autocomplete="off" required>
+            </div>
+            <div class="bo1">
+                <button type="submit" class="btn btn-primary">Entrar</button>
+                <button type="button" class="btn btn-warning" onclick="limparCampo()">Limpar</button>
+                <button type="button" class="btn btn-danger" onclick="trocarpassword()">Esqueci a senha</button>
+            </div>
+        </form>
+    </div>
+    
+<script>
+document.getElementById('CPF').addEventListener('input', function() {
+  let value = this.value.replace(/\D/g, '');
+  if (value.length > 3) {
+  value = value.substring(0, 3) + '.' + value.substring(3);
+  }
+  if (value.length > 7) {
+  value = value.substring(0, 7) + '.' + value.substring(7);
+  }
+  if (value.length > 11) {
+  value = value.substring(0, 11) + '-' + value.substring(11, 13);
+  }
+  this.value = value;
+});
+        
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
