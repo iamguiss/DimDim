@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="abacartao.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-light" style="background-color: rgb(255, 145, 0)">
+        <div class="container-md">
+            <a class="navbar-brand text-white" href="homeDim.html">Dim Dim</a>
+        </div>
+    </nav>
+    
+
+    <div class="card-group">
+        <div class="card">
+          <img src="/img/goldcard.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dim Gold</h5>
+            <p class="card-text">O Cartão de Crédito Gold oferece benefícios essenciais para quem deseja mais
+                 praticidade e segurança nas suas compras diárias. Com um limite maior que os cartões básicos
+                  e algumas vantagens adicionais,
+                 é ideal para quem está começando a explorar mais opções de crédito.</p>
+          </div>
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModG">
+              Solicite
+            </button>
+            <div class="modal fade" id="formModG" tabindex="-1" aria-labelledby="formModGLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="formModGLabel">Solicitação Cartão Gold</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                  <form action="/img/cartoes.html" class="row g-3 needs-validation" novalidate>
+                      <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label text-white">Primeiro Nome</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Ex: João" required>
+                        <div class="valid-feedback">
+                          Tudo Certo!
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label text-white">Sobrenome</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Silva" required>
+                        <div class="valid-feedback">
+                          Tudo Certo!
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label text-white">E-mail</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text" id="inputGroupPrepend">@</span>
+                          <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                          <div class="invalid-feedback">
+                            Revise seu email!!!
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label text-white">Cidade</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                          Escolha uma cidade existente.
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label text-white">Estado</label>
+                        <select class="form-select" id="validationCustom04" required>
+                          <option selected disabled value="">Escolha</option>
+                          <option value="">Acre</option>
+                          <option value="">Alagoas</option>
+                          <option value="">Amapá</option>
+                          <option value="">Amazonas</option>
+                          <option value="">Bahia</option>
+                          <option value="">Ceará</option>
+                          <option value="">Espírito Santo</option>
+                          <option value="">Goiás</option>
+                          <option value="">Maranhão</option>
+                          <option value="">Maranhão</option>
+                          <option value="">Mato Grosso do Sul</option>
+                          <option value="">Minas Gerais</option>
+                          <option value="">Pará</option>
+                          <option value="">Paraíba</option>
+                          <option value="">Paraná</option>
+                          <option value="">Pernambuco</option>
+                          <option value="">Piauí</option>
+                          <option value="">Rio de Janeiro</option>
+                          <option value="">Rio Grande do Norte</option>
+                          <option value="">Rio Grande do Sul</option>
+                          <option value="">Rondônia</option>
+                          <option value="">Roraima</option>
+                          <option value="">Santa Catarina</option>
+                          <option value="">São Paulo</option>
+                          <option value="">Sergipe</option>
+                          <option value="">Tocantins</option>
+                          <option value="">Distrito Federal</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          selecione um estado válido
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label text-white">Cep</label>
+                        <input type="number" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                          Revise seu cep!!!
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label text-white" for="invalidCheck">
+                            Concordo com os termos e condições.
+                          </label>
+                          <div class="invalid-feedback">
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Salvar</button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Solicitar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Button trigger modal -->
+    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        vantagens
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Gold vantagens</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <ul>
+                <li>Limite de crédito maior que os cartões standard.</li>
+                <li>Programa de pontos que permite acumular pontos a cada compra.</li>
+                <li>Seguro de viagem básico e proteção de compra.</li>
+                <li>Acesso a ofertas e descontos exclusivos em parceiros selecionados.</li>
+            </ul>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/img/platcard.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dim Platnum</h5>
+            <p class="card-text">O Cartão de Crédito Platinum é a escolha perfeita
+                 para quem busca benefícios superiores e um atendimento diferenciado.
+                  Com este cartão, você desfruta de mais vantagens e recompensas
+                 que fazem a diferença no seu dia a dia e em viagens.</p>
+          </div>
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModP">
+              Solicite
+            </button>
+            <div class="modal fade" id="formModP" tabindex="-1" aria-labelledby="formModPLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="formModPLabel">Solicitação Cartão Platnum</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                  <form action="cartoes.html" class="row g-3 needs-validation" novalidate>
+                      <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label text-white">Primeiro Nome</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Ex: João" required>
+                        <div class="valid-feedback">
+                          Tudo Certo!
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label text-white">Sobrenome</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Silva" required>
+                        <div class="valid-feedback">
+                          Tudo Certo!
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label text-white">E-mail</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text" id="inputGroupPrepend">@</span>
+                          <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                          <div class="invalid-feedback">
+                            Revise seu email!!!
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label text-white">Cidade</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                          Escolha uma cidade existente.
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label text-white">Estado</label>
+                        <select class="form-select" id="validationCustom04" required>
+                          <option selected disabled value="">Escolha</option>
+                          <option value="">Acre</option>
+                          <option value="">Alagoas</option>
+                          <option value="">Amapá</option>
+                          <option value="">Amazonas</option>
+                          <option value="">Bahia</option>
+                          <option value="">Ceará</option>
+                          <option value="">Espírito Santo</option>
+                          <option value="">Goiás</option>
+                          <option value="">Maranhão</option>
+                          <option value="">Maranhão</option>
+                          <option value="">Mato Grosso do Sul</option>
+                          <option value="">Minas Gerais</option>
+                          <option value="">Pará</option>
+                          <option value="">Paraíba</option>
+                          <option value="">Paraná</option>
+                          <option value="">Pernambuco</option>
+                          <option value="">Piauí</option>
+                          <option value="">Rio de Janeiro</option>
+                          <option value="">Rio Grande do Norte</option>
+                          <option value="">Rio Grande do Sul</option>
+                          <option value="">Rondônia</option>
+                          <option value="">Roraima</option>
+                          <option value="">Santa Catarina</option>
+                          <option value="">São Paulo</option>
+                          <option value="">Sergipe</option>
+                          <option value="">Tocantins</option>
+                          <option value="">Distrito Federal</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          selecione um estado válido
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label text-white">Cep</label>
+                        <input type="number" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                          Revise seu cep!!!
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label text-white" for="invalidCheck">
+                            Concordo com os termos e condições.
+                          </label>
+                          <div class="invalid-feedback">
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Salvar</button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Solicitar</button>
+                  </div>
+                </div>
+              </div>
+            </div>            
+            
+            <!-- Button trigger modal -->
+    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      vantagens
+    </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Platnum vantagens</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <ul class="texts">
+                <li>
+                    Limite de crédito ainda maior e flexível.
+                </li>
+                <li>
+                Programa de pontos mais robusto, com possibilidade de troca por uma variedade de produtos e serviços.
+                </li>
+                <li>
+                    Seguro de viagem abrangente e assistência 24 horas.
+                </li>
+                <li>
+                    Acesso a salas VIP em aeroportos selecionados.
+                </li>
+                <li>
+                    Descontos em aluguel de carros, hotéis e restaurantes.
+                </li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/img/picCardBlack.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dim Black</h5>
+            <p class="card-text">O Cartão de Crédito Black representa o topo da linha,
+                oferecendo uma experiência premium com benefícios exclusivos.
+                Este cartão é projetado para aqueles que procuram o melhor em termos de conveniência,
+                luxo e atendimento personalizado.</p>
+          </div>
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formMod">
+              Solicite
+            </button>
+            <div class="modal fade" id="formMod" tabindex="-1" aria-labelledby="formModLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="formModLabel">Solicitação Cartão Black</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                  <form action="cartoes.html" class="row g-3 needs-validation" novalidate>
+                      <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label text-white">Primeiro Nome</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Ex: João" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label text-white">Sobrenome</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Silva" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label text-white">E-mail</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text" id="inputGroupPrepend">@</span>
+                          <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                          <div class="invalid-feedback">
+                            Please choose a username.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label text-white">Cidade</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid city.
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label text-white">Estado</label>
+                        <select class="form-select" id="validationCustom04" required>
+                          <option selected disabled value="">Escolha</option>
+                          <option value="">Acre</option>
+                          <option value="">Alagoas</option>
+                          <option value="">Amapá</option>
+                          <option value="">Amazonas</option>
+                          <option value="">Bahia</option>
+                          <option value="">Ceará</option>
+                          <option value="">Espírito Santo</option>
+                          <option value="">Goiás</option>
+                          <option value="">Maranhão</option>
+                          <option value="">Maranhão</option>
+                          <option value="">Mato Grosso do Sul</option>
+                          <option value="">Minas Gerais</option>
+                          <option value="">Pará</option>
+                          <option value="">Paraíba</option>
+                          <option value="">Paraná</option>
+                          <option value="">Pernambuco</option>
+                          <option value="">Piauí</option>
+                          <option value="">Rio de Janeiro</option>
+                          <option value="">Rio Grande do Norte</option>
+                          <option value="">Rio Grande do Sul</option>
+                          <option value="">Rondônia</option>
+                          <option value="">Roraima</option>
+                          <option value="">Santa Catarina</option>
+                          <option value="">São Paulo</option>
+                          <option value="">Sergipe</option>
+                          <option value="">Tocantins</option>
+                          <option value="">Distrito Federal</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          selecione um estado válido
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label text-white">Cep</label>
+                        <input type="number" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid zip.
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label text-white" for="invalidCheck">
+                            Concordo com os termos e condições.
+                          </label>
+                          <div class="invalid-feedback">
+                            You must agree before submitting.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Salvar</button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Solicitar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#ultModal">
+                vantagens
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="ultModal" tabindex="-1" aria-labelledby="ultModallabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="ultModallabel">Black vantagens</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>
+                                Limite de crédito extremamente alto e personalizável.
+                            </li>
+                            <li>
+                                Programa de recompensas com pontuação acelerada e opções de resgate exclusivas.
+                            </li>
+                            <li>
+                                Seguro de viagem completo, incluindo cobertura para familiares.
+                            </li>
+                            <li>
+                                Acesso ilimitado a salas VIP em aeroportos de todo o mundo.
+                            </li>
+                            <li>
+                                Serviço de concierge disponível 24 horas para atender a todas as suas necessidades.
+                            </li>
+                            <li>
+                                Benefícios e descontos exclusivos em eventos, shows, e experiências de luxo.
+                            </li>
+                            <li>
+                                Proteção completa em compras, com garantia estendida e seguro contra roubo e danos.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+</body>
+</html>
